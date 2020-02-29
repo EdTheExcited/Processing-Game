@@ -9,16 +9,16 @@ void changepos() {
   ypos+=yspeed;
 }
 void keyPressed() {
-  if (key == 'a') {
+  if (key == 'a' || key == 'A') {
     moveleft = true;
   }
-  if (key == 'd') {
+  if (key == 'd' || key == 'D') {
     moveright = true;
   }
-  if (key == 'w') {
+  if (key == 'w' || key == 'W') {
     moveup = true;
   }
-  if (key == 's') {
+  if (key == 's' || key == 'S') {
     movedown = true;
   }
   if (key == ' ') {
@@ -26,16 +26,16 @@ void keyPressed() {
   }
 }
 void keyReleased() {
-  if (key == 'a') {
+  if (key == 'a' || key == 'A') {
     moveleft = false;
   }
-  if (key == 'd') {
+  if (key == 'd' || key == 'D') {
     moveright = false;
   }
-  if (key == 'w') {
+  if (key == 'w' || key == 'W') {
     moveup = false;
   }
-  if (key == 's') {
+  if (key == 's' || key == 'S') {
     movedown = false;
   }
 }

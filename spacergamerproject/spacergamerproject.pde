@@ -12,7 +12,6 @@ void draw() {
   background(0);
   image(Player, xpos, ypos, 300, 300);
   speed(); 
-  b.bullet();
   b.bulletmove();
   changepos();
   xspeed *= 0.8; //drag

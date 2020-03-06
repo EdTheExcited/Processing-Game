@@ -5,7 +5,8 @@ void addbullet() {
     bulletcount++; //++ lägger till 1 i bulletcount
   }
   for (int i= 0; i <= bulletcount; i++) { //skapar en lokal variabel (i) som jämförs med bulletcount och kör koden lika många gånger som bullet count.
-  }
+  
+}
 }
 
 class Bullet {
@@ -21,10 +22,12 @@ class Bullet {
     bulletx = xpos + 273;
     bullety = ypos + 145;
     bulletspeed = 100;
-    if (shoot) rect(bulletx, bullety, 35, 10);
   }
 
   void bulletmove() {
     bulletx += bulletspeed;
+    if (shoot) println('Viktor'); //rect(bulletx, bullety, 35, 10); shoot = false;
+    
+    
   }
 }
